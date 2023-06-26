@@ -1,5 +1,6 @@
 package example.usermanagement;
 
+import example.usermanagement.aop.TimeTraceAop;
 import example.usermanagement.repository.MemberRepository;
 import example.usermanagement.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,12 @@ public class SpringConfig {
 //    public MemberRepository memberRepository() {
 ////        return new MemoryMemberRepository();
 ////        return new JpaMemberRepository(em);
+//    }
+
+    // For AOP
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
 //    }
 
 }
